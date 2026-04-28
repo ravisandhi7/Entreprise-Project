@@ -1,4 +1,4 @@
-1. Prerequisites (Before You Start)
+1. Prerequisites 
 You need 3–4 VMs in VirtualBox / VMware:
 •	DC1 (Primary Domain Controller) → Windows Server 2019/2022 
 •	DC2 (Additional Domain Controller) 
@@ -12,8 +12,8 @@ DC1	10.0.0.10
 DC2	10.0.0.11
 RODC	10.0.0.12
 Client	DHCP
-________________________________________
-🏗️ 2. Build Primary Domain Controller (DC1)
+
+2. Build Primary Domain Controller (DC1)
 Step 1: Install AD DS Role
 •	Server Manager → Add Roles 
 •	Select: 
@@ -24,12 +24,12 @@ Step 2: Promote to Domain Controller
 o	“Add new forest” 
 o	Domain: enterprise.local 
 Restart server.
-________________________________________
+
 Step 3: Configure DNS
 •	Ensure DNS role installed 
 •	Set forwarders (optional): 8.8.8.8 
 ________________________________________
-🧑‍💼 3. Create OU Structure (Very Important for Resume)
+3. Create OU Structure (Very Important for Resume)
 Open:
 Active Directory Users and Computers (ADUC)
 Create:
@@ -39,8 +39,8 @@ Enterprise.local
 ├── IT
 ├── Finance
 └── Groups
-________________________________________
-👥 4. Create Users + Groups
+
+4. Create Users + Groups
 Manual method (for screenshots):
 Create:
 •	HR Users: hr.user1, hr.user2 
@@ -51,8 +51,8 @@ Create Security Groups:
 •	IT_Group 
 •	Finance_Group 
 Assign users → groups.
-________________________________________
-⚙️ 5. PowerShell Automation (IMPORTANT FOR GITHUB)
+
+5. PowerShell Automation (IMPORTANT FOR GITHUB)
 Create file: create-users.ps1
 Import-Module ActiveDirectory
 
@@ -73,8 +73,8 @@ foreach ($user in $users) {
         -AccountPassword (ConvertTo-SecureString "Password@123" -AsPlainText -Force) `
         -Enabled $true
 }
-________________________________________
-🧠 6. Add Second Domain Controller (DC2 - ADC)
+
+6. Add Second Domain Controller (DC2 - ADC)
 On DC2:
 Step 1:
 •	Join domain: enterprise.local 
@@ -84,17 +84,17 @@ Step 3:
 •	Promote → “Add domain controller to existing domain” 
 Verify replication:
 repadmin /replsummary
-________________________________________
-📡 7. Setup RODC (Read Only Domain Controller)
+
+7. Setup RODC (Read Only Domain Controller)
 On RODC server:
 •	Join domain 
 •	Promote: 
 o	Select “Read Only Domain Controller” 
-👉 Important settings:
+Important settings:
 •	Deny password caching for HR/Finance groups 
 •	Allow IT group caching 
-________________________________________
-🌐 8. DHCP Setup
+
+8. DHCP Setup
 On DC1:
 •	Install DHCP role 
 •	Create scope: 
@@ -103,8 +103,8 @@ Range: 10.0.0.100 - 10.0.0.200
 Gateway: 10.0.0.1
 DNS: 10.0.0.10
 Authorize DHCP in AD.
-________________________________________
-🔐 9. Group Policy (VERY IMPORTANT FOR RESUME)
+
+9. Group Policy (VERY IMPORTANT FOR RESUME)
 Create GPOs:
 Example Policies:
 •	Disable USB (HR computers) 
@@ -112,8 +112,8 @@ Example Policies:
 •	Desktop restrictions 
 Path:
 Group Policy Management → Default Domain Policy / New GPO
-________________________________________
-🧪 10. Testing (You MUST show this in screenshots)
+
+10. Testing (You MUST show this in screenshots)
 •	Login with domain user on client machine 
 •	Check: 
 o	IP from DHCP 
@@ -121,8 +121,8 @@ o	User login works
 o	Group policies applied 
 •	Test replication: 
 repadmin /showrepl
-________________________________________
-📸 11. Screenshots You MUST Include on GitHub
+
+11. Screenshots You MUST Include on GitHub
 Take screenshots of:
 •	AD Users & Computers (OU structure) 
 •	Created users 
@@ -131,8 +131,8 @@ Take screenshots of:
 •	GPO settings 
 •	DC1 + DC2 replication status 
 •	Client login screen 
-________________________________________
-🗺️ 12. Architecture Diagram (draw.io)
+
+12. Architecture Diagram (draw.io)
 Include:
 •	DC1 (AD DS + DNS + DHCP) 
 •	DC2 (ADC) 
@@ -141,8 +141,8 @@ Include:
 •	Network switch (virtual) 
 Export as:
 architecture-diagram.png
-________________________________________
-📂 13. GitHub Repository Structure
+
+13. GitHub Repository Structure
 Enterprise-Active-Directory-Lab/
 │
 ├── README.md
