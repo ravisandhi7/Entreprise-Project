@@ -4,7 +4,7 @@ This project demonstrates a complete Enterprise Active Directory environment bui
 
 The lab is designed to showcase system administration, identity management, and enterprise network configuration skills.
 
-🎯 Objectives
+🎯 **Objectives**
 
 
 Deploy and configure Active Directory Domain Services (AD DS)
@@ -28,7 +28,7 @@ Apply Group Policies (GPOs)
 Test replication and domain functionality
 
 
-🖥️ Lab Environment
+🖥️** Lab Environment**
 
 
 Virtual Machines
@@ -61,7 +61,9 @@ DNS handled by DC1
 DHCP configured on DC1
 
 
-🏗️ Architecture
+🏗️ **Architecture**
+
+
 DC1 → AD DS, DNS, DHCP
 
 
@@ -74,18 +76,18 @@ RODC → Read-Only Domain Controller
 Client Machine → Domain-joined workstation
 
 
-📌 See: architecture-diagram.png
+📌 **See: architecture-diagram.png**
 
 
-⚙️ Setup Guide
+⚙️ **Setup Guide**
 
 
 Detailed step-by-step instructions are available in:
 
 
-📄 setup-guide.md
+📄 **setup-guide.md**
 
-🧑‍💼 Active Directory Structure
+🧑‍💼 **Active Directory Structure**
 
 
 Enterprise.local
@@ -103,7 +105,7 @@ Finance
 Groups
 
 
-👥 Users and Groups
+👥** Users and Groups**
 
 
 Sample Users
@@ -130,11 +132,11 @@ IT_Group
 Finance_Group
 
 
-⚡ PowerShell Automation
+⚡** PowerShell Automation**
 
 User creation automated using:
 
-📄 scripts/create-users.ps1
+📄** scripts/create-users.ps1**
 
 Features:
 
@@ -151,16 +153,16 @@ Secure password setup
 Enabled accounts by default
 
 
-🌐 Services Configured
+🌐** Services Configured**
 
 
-✅ Active Directory Domain Services
+✅ **Active Directory Domain Services**
 
 
 New forest: enterprise.local
 
 
-✅ DNS
+✅ **DNS**
 
 
 Integrated with AD
@@ -169,7 +171,7 @@ Integrated with AD
 Optional forwarder: 8.8.8.8
 
 
-✅ DHCP
+✅** DHCP**
 
 
 Scope: 10.0.0.100 – 10.0.0.200
@@ -181,7 +183,7 @@ Gateway: 10.0.0.1
 DNS: 10.0.0.10
 
 
-🔁 Domain Controllers
+🔁** Domain Controllers**
 
 
 DC2 (Additional Domain Controller)
@@ -202,13 +204,13 @@ RODC (Read-Only Domain Controller)
 Configured with selective password caching:
 
 
-❌ HR & Finance → Denied
+❌ **HR & Finance → Denied**
 
 
-✅ IT → Allowed
+✅ **IT → Allowed**
 
 
-🔐 Group Policy (GPO)
+🔐** Group Policy (GPO)**
 
 Implemented policies include:
 
@@ -227,7 +229,7 @@ Managed via:
 Group Policy Management Console (GPMC)
 
 
-🧪 Testing & Validation
+🧪 **Testing & Validation**
 
 
 ✔ Domain user login on client
@@ -248,7 +250,7 @@ Commands used:
 repadmin /showrepl
 
 
-📸 Screenshots
+📸** Screenshots**
 
 
 Stored in: screenshots/
@@ -275,7 +277,7 @@ Replication status
 Client login
 
 
-📂 Repository Structure
+📂 **Repository Structure**
 
 
 Enterprise-Active-Directory-Lab/
@@ -294,8 +296,8 @@ Enterprise-Active-Directory-Lab/
     └── troubleshooting.md
 
     
-🚀 Key Skills Demonstrated
-
+🚀 **Key Skills Demonstrated
+**
 
 Active Directory Administration
 
@@ -318,7 +320,7 @@ Enterprise Network Design
 Troubleshooting & Replication
 
 
-🧠 Learning Outcomes
+🧠 **Learning Outcomes**
 
 
 This lab provides hands-on experience in building and managing a realistic enterprise IT infrastructure, preparing for roles such as:
