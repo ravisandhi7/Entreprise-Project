@@ -98,6 +98,9 @@ Important settings:
 •	Deny password caching for HR/Finance groups 
 •	Allow IT group caching 
 
+![PING RODC](screenshots/basic/DOMAIN_CONTROLLERS_ROOTDC_ADC_RODC.png)
+
+
 8. DHCP Setup
 On DC1:
 •	Install DHCP role 
