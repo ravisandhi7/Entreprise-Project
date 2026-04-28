@@ -40,8 +40,18 @@ Detailed step-by-step instructions are available in:
 Enterprise.local
 
 HR
+
+
+
 IT
+
+
+
 Finance
+
+
+
+
 Groups
 👥 Users and Groups
 Sample Users
