@@ -28,7 +28,7 @@ Apply Group Policies (GPOs)
 Test replication and domain functionality
 
 
-🖥️** Lab Environment**
+🖥️ **Lab Environment**
 
 
 Virtual Machines
@@ -105,7 +105,7 @@ Finance
 Groups
 
 
-👥** Users and Groups**
+👥 **Users and Groups**
 
 
 Sample Users
@@ -132,11 +132,11 @@ IT_Group
 Finance_Group
 
 
-⚡** PowerShell Automation**
+⚡**PowerShell Automation**
 
 User creation automated using:
 
-📄** scripts/create-users.ps1**
+📄**scripts/create-users.ps1**
 
 Features:
 
@@ -153,7 +153,7 @@ Secure password setup
 Enabled accounts by default
 
 
-🌐** Services Configured**
+🌐**Services Configured**
 
 
 ✅ **Active Directory Domain Services**
@@ -171,7 +171,7 @@ Integrated with AD
 Optional forwarder: 8.8.8.8
 
 
-✅** DHCP**
+✅**DHCP**
 
 
 Scope: 10.0.0.100 – 10.0.0.200
@@ -183,7 +183,7 @@ Gateway: 10.0.0.1
 DNS: 10.0.0.10
 
 
-🔁** Domain Controllers**
+🔁**Domain Controllers**
 
 
 DC2 (Additional Domain Controller)
@@ -210,7 +210,7 @@ Configured with selective password caching:
 ✅ **IT → Allowed**
 
 
-🔐** Group Policy (GPO)**
+🔐**Group Policy (GPO)**
 
 Implemented policies include:
 
@@ -250,7 +250,7 @@ Commands used:
 repadmin /showrepl
 
 
-📸** Screenshots**
+📸**Screenshots**
 
 
 Stored in: screenshots/
@@ -296,8 +296,7 @@ Enterprise-Active-Directory-Lab/
     └── troubleshooting.md
 
     
-🚀 **Key Skills Demonstrated
-**
+🚀 **Key Skills Demonstrated**
 
 Active Directory Administration
 
