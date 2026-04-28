@@ -5,42 +5,89 @@ This project demonstrates a complete Enterprise Active Directory environment bui
 The lab is designed to showcase system administration, identity management, and enterprise network configuration skills.
 
 🎯 Objectives
+
+
 Deploy and configure Active Directory Domain Services (AD DS)
+
+
 Implement multi-domain controller architecture
+
+
 Configure DNS and DHCP services
+
+
 Create and manage Organizational Units (OUs), Users, and Groups
+
+
 Automate user creation using PowerShell
+
+
 Apply Group Policies (GPOs)
+
+
 Test replication and domain functionality
 
 
 🖥️ Lab Environment
+
+
 Virtual Machines
+
+
 Machine	Role	IP Address
+
+
 DC1	Primary Domain Controller	10.0.0.10
+
+
 DC2	Additional Domain Controller	10.0.0.11
+
+
 RODC	Read-Only Domain Controller	10.0.0.12
+
+
 Client	Windows 10/11	DHCP
+
+
 Network Configuration
+
+
 Internal Network / Host-Only Adapter
+
+
 DNS handled by DC1
+
+
 DHCP configured on DC1
 
 
 🏗️ Architecture
 DC1 → AD DS, DNS, DHCP
+
+
 DC2 → Additional Domain Controller (Replication)
+
+
 RODC → Read-Only Domain Controller
+
+
 Client Machine → Domain-joined workstation
+
 
 📌 See: architecture-diagram.png
 
+
 ⚙️ Setup Guide
 
+
 Detailed step-by-step instructions are available in:
+
+
 📄 setup-guide.md
 
 🧑‍💼 Active Directory Structure
+
+
 Enterprise.local
 
 HR
@@ -53,19 +100,33 @@ IT
 Finance
 
 
-
-
 Groups
 
 
 👥 Users and Groups
+
+
 Sample Users
+
+
 HR: hr.user1, hr.user2
+
+
 IT: it.user1, it.admin
+
+
 Finance: finance.user1
+
+
 Security Groups
+
+
 HR_Group
+
+
 IT_Group
+
+
 Finance_Group
 
 
@@ -76,9 +137,17 @@ User creation automated using:
 📄 scripts/create-users.ps1
 
 Features:
+
+
 Bulk user creation
+
+
 OU-based organization
+
+
 Secure password setup
+
+
 Enabled accounts by default
 
 
@@ -86,6 +155,8 @@ Enabled accounts by default
 
 
 ✅ Active Directory Domain Services
+
+
 New forest: enterprise.local
 
 
@@ -93,6 +164,8 @@ New forest: enterprise.local
 
 
 Integrated with AD
+
+
 Optional forwarder: 8.8.8.8
 
 
@@ -100,7 +173,11 @@ Optional forwarder: 8.8.8.8
 
 
 Scope: 10.0.0.100 – 10.0.0.200
+
+
 Gateway: 10.0.0.1
+
+
 DNS: 10.0.0.10
 
 
@@ -136,15 +213,22 @@ Configured with selective password caching:
 Implemented policies include:
 
 USB storage restriction (HR)
+
+
 Password policies
+
+
 Desktop restrictions
 
+
 Managed via:
+
 
 Group Policy Management Console (GPMC)
 
 
 🧪 Testing & Validation
+
 
 ✔ Domain user login on client
 
@@ -157,22 +241,37 @@ Group Policy Management Console (GPMC)
 
 ✔ AD replication check
 
+
 Commands used:
+
 
 repadmin /showrepl
 
 
 📸 Screenshots
 
+
 Stored in: screenshots/
+
 
 Includes:
 
+
 AD structure
+
+
 Users and groups
+
+
 DHCP configuration
+
+
 GPO settings
+
+
 Replication status
+
+
 Client login
 
 
@@ -221,7 +320,9 @@ Troubleshooting & Replication
 
 🧠 Learning Outcomes
 
+
 This lab provides hands-on experience in building and managing a realistic enterprise IT infrastructure, preparing for roles such as:
+
 
 System Administrator
 
