@@ -121,7 +121,7 @@ Sample Users
 
 HR: hr.user1, hr.user2
 
-![PING RODC](screenshots/basic/HR_USERS.png)
+![PING RODC](screenshots/users/HR_USERS.png)
 
 
 IT: it.user1, it.admin
