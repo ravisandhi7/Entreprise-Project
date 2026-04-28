@@ -45,6 +45,8 @@ DC2	Additional Domain Controller	10.0.0.11
 
 RODC	Read-Only Domain Controller	10.0.0.12
 
+![PING RODC](screenshots/basic/PING_RODC.png)
+
 
 Client	Windows 10/11	DHCP
 
