@@ -1,4 +1,4 @@
-📌 Overview
+📌 **Overview**
 
 This project demonstrates a complete Enterprise Active Directory environment built using virtual machines. It simulates a real-world corporate network with multiple domain controllers, organizational units, group policies, and automation using PowerShell.
 
