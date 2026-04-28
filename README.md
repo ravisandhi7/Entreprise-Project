@@ -115,6 +115,9 @@ Authorize DHCP in AD.
 ![DHCP_ADDRESS_POOL](screenshots/basic/DHCP_ADDRESS_POOL.png)
 
 
+![DHCP_ADDRESS_LEASE.png](screenshots/basic/DHCP_ADDRESS_LEASE.png)
+
+
 9. Group Policy (VERY IMPORTANT FOR RESUME)
 Create GPOs:
 Example Policies:
