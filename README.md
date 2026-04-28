@@ -146,6 +146,8 @@ IT_Group
 Finance_Group
 
 
+![PING RODC](screenshots/groups/GROUPS.png)
+
 ⚡**PowerShell Automation**
 
 User creation automated using:
