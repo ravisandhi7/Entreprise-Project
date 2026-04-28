@@ -126,9 +126,13 @@ HR: hr.user1, hr.user2
 
 IT: it.user1, it.admin
 
+![PING RODC](screenshots/users/IT_USERS.png)
+
 
 Finance: finance.user1
 
+
+![PING RODC](screenshots/users/FINANCE_USERS.png)
 
 Security Groups
 
