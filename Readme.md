@@ -12,6 +12,8 @@ Create and manage Organizational Units (OUs), Users, and Groups
 Automate user creation using PowerShell
 Apply Group Policies (GPOs)
 Test replication and domain functionality
+
+
 🖥️ Lab Environment
 Virtual Machines
 Machine	Role	IP Address
@@ -23,6 +25,8 @@ Network Configuration
 Internal Network / Host-Only Adapter
 DNS handled by DC1
 DHCP configured on DC1
+
+
 🏗️ Architecture
 DC1 → AD DS, DNS, DHCP
 DC2 → Additional Domain Controller (Replication)
@@ -52,6 +56,8 @@ Finance
 
 
 Groups
+
+
 👥 Users and Groups
 Sample Users
 HR: hr.user1, hr.user2
@@ -61,6 +67,8 @@ Security Groups
 HR_Group
 IT_Group
 Finance_Group
+
+
 ⚡ PowerShell Automation
 
 User creation automated using:
@@ -72,25 +80,57 @@ Bulk user creation
 OU-based organization
 Secure password setup
 Enabled accounts by default
+
+
 🌐 Services Configured
+
+
 ✅ Active Directory Domain Services
 New forest: enterprise.local
+
+
 ✅ DNS
+
+
 Integrated with AD
 Optional forwarder: 8.8.8.8
+
+
 ✅ DHCP
+
+
 Scope: 10.0.0.100 – 10.0.0.200
 Gateway: 10.0.0.1
 DNS: 10.0.0.10
+
+
 🔁 Domain Controllers
+
+
 DC2 (Additional Domain Controller)
+
+
 Joined to domain
+
+
 Replication verified using:
+
+
 repadmin /replsummary
+
+
 RODC (Read-Only Domain Controller)
+
+
 Configured with selective password caching:
+
+
 ❌ HR & Finance → Denied
+
+
 ✅ IT → Allowed
+
+
 🔐 Group Policy (GPO)
 
 Implemented policies include:
@@ -102,16 +142,26 @@ Desktop restrictions
 Managed via:
 
 Group Policy Management Console (GPMC)
+
+
 🧪 Testing & Validation
 
 ✔ Domain user login on client
+
+
 ✔ DHCP IP assignment
+
+
 ✔ GPO application verification
+
+
 ✔ AD replication check
 
 Commands used:
 
 repadmin /showrepl
+
+
 📸 Screenshots
 
 Stored in: screenshots/
@@ -124,7 +174,11 @@ DHCP configuration
 GPO settings
 Replication status
 Client login
+
+
 📂 Repository Structure
+
+
 Enterprise-Active-Directory-Lab/
 │
 ├── README.md
@@ -139,18 +193,40 @@ Enterprise-Active-Directory-Lab/
 │   └── replication.png
 └── notes/
     └── troubleshooting.md
+
+    
 🚀 Key Skills Demonstrated
+
+
 Active Directory Administration
+
+
 Windows Server Management
+
+
 PowerShell Automation
+
+
 DNS & DHCP Configuration
+
+
 Group Policy Management
+
+
 Enterprise Network Design
+
+
 Troubleshooting & Replication
+
+
 🧠 Learning Outcomes
 
 This lab provides hands-on experience in building and managing a realistic enterprise IT infrastructure, preparing for roles such as:
 
 System Administrator
+
+
 IT Support Specialist
+
+
 Network Administrator
