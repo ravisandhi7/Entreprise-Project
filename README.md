@@ -13,6 +13,10 @@ DC2	10.0.0.11
 RODC	10.0.0.12
 Client	DHCP
 
+
+![PING RODC](screenshots/basic/PING_RODC.png)
+
+
 2. Build Primary Domain Controller (DC1)
 Step 1: Install AD DS Role
 •	Server Manager → Add Roles 
