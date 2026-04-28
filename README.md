@@ -78,6 +78,9 @@ RODC → Read-Only Domain Controller
 Client Machine → Domain-joined workstation
 
 
+![PING RODC](screenshots/basic/DOMAIN_CONTROLLERS_ROOTDC_ADC_RODC.png)
+
+
 📌 **See: architecture-diagram.png**
 
 
