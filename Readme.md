@@ -38,11 +38,11 @@ Detailed step-by-step instructions are available in:
 
 🧑‍💼 Active Directory Structure
 Enterprise.local
-│
-├── HR
-├── IT
-├── Finance
-└── Groups
+
+HR
+IT
+Finance
+Groups
 👥 Users and Groups
 Sample Users
 HR: hr.user1, hr.user2
