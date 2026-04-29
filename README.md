@@ -47,7 +47,7 @@ Client PC - PC1  10.0.0.160/8
 
 
 
-
+![PING](screenshots/basic/IPCONFIG_ALL_DHCP_DNS.png)
 
 
 
