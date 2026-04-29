@@ -59,7 +59,7 @@ Client PC - PC1 - 10.0.0.160/8
 ![PING](screenshots/basic/PING_RODC.png)
 
 
-PC1	Windows 10/11	DHCP(Reserved IP)
+PC1	Windows 11	DHCP(Reserved IP)
 
 
 Network Configuration
