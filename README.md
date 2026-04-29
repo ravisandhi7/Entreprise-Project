@@ -236,6 +236,21 @@ Group Policy Management Console (GPMC)
 ![GPO](screenshots/gpo/GROUPS_POLICY_OBJECTS.png)
 
 
+![GPO](screenshots/gpo/HR_USB_BLOCK.png)
+
+
+![GPO](screenshots/gpo/HR_USB_BLOCK_TO_HR_OU.png)
+
+
+![GPO](screenshots/gpo/HR_DESKTOP_RESTRICTIONS.png)
+
+
+![GPO](screenshots/gpo/HR_DESKTOP_RESTRICTIONS_TO_HR_OU.png)
+
+
+![GPO](screenshots/gpo/GP_HR_USB_DESKTOP_RESTRICTION.png)
+
+
 🧪 **Testing & Validation**
 
 
