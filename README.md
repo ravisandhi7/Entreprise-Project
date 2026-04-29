@@ -46,7 +46,7 @@ RODC - Read-Only Domain Controller	10.0.0.101/8
 Client PC - PC1  10.0.0.160/8
 
 
-![IP_CONFIG](screenshots/basic/IPCONFIG_ALL_DHCP_DNS.png)
+![IP_CONFIG_ALL_DHCP_DNS](screenshots/basic/IPCONFIG_ALL_DHCP_DNS.png)
 
 
 ![PING RODC](screenshots/basic/PING_RODC.png)
