@@ -2,7 +2,7 @@
 
 This project demonstrates a complete Enterprise Active Directory environment built using virtual machines. It simulates a real-world corporate network with multiple domain controllers, organizational units, and group policies.
 
-The lab is designed to showcase system administration, identity management, and enterprise network configuration skills.
+The project is designed to showcase system administration, identity management, and enterprise network configuration skills.
 
 🎯 **Objectives**
 
@@ -25,7 +25,7 @@ Apply Group Policies (GPOs)
 Test replication and domain functionality
 
 
-🖥️ **Lab Environment**
+🖥️ **Project Infrastructure**
 
 
 Virtual Machines
