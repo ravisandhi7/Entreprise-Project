@@ -233,7 +233,7 @@ Managed via:
 Group Policy Management Console (GPMC)
 
 
-![GPO](screenshots/gpo/GROUP_POLICY_OBJECTS.png)
+![GPO](screenshots/gpo/GROUPS_POLICY_OBJECTS.png)
 
 
 🧪 **Testing & Validation**
