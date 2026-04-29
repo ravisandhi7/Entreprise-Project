@@ -95,32 +95,16 @@ Client Machine → Domain-joined workstation
 ![PING RODC](screenshots/basic/DOMAIN_CONTROLLERS_ROOTDC_ADC_RODC.png)
 
 
-📌 **See: architecture-diagram.png**
-
-
-⚙️ **Setup Guide**
-
-
-Detailed step-by-step instructions are available in:
-
-
-📄 **setup-guide.md**
-
 🧑‍💼 **Active Directory Structure**
 
 
-ravikumar.online
-
-HR
+Domain: ravikumar.online
 
 
-IT
+OUs: HR, IT, Finance
 
 
-Finance
-
-
-Groups
+Groups: HR_GROUP, FINANCE_GROUP, IT_GROUP
 
 
 👥 **Users and Groups**
@@ -173,7 +157,7 @@ Finance_Group
 ✅ **Active Directory Domain Services**
 
 
-New forest: ravikumar.online
+Forest: ravikumar.online
 
 
 ✅ **DNS**
