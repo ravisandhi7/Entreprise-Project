@@ -252,9 +252,6 @@ Group Policy Management Console (GPMC)
 ![GPO](screenshots/gpo/HR_DESKTOP_RESTRICTIONS_TO_HR_OU.png)
 
 
-![GPO](screenshots/gpo/GP_HR_USB_DESKTOP_RESTRICTION.png)
-
-
 ![GPO](screenshots/gpo/GPUPDATE_FORCE.png)
 
 
