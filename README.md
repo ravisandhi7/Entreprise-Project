@@ -246,6 +246,12 @@ Group Policy Management Console (GPMC)
 ![GPO](screenshots/gpo/HR_USB_BLOCK_TO_HR_OU.png)
 
 
+![GPO](screenshots/gpo/DEFAULT_DOMAIN_PASSWORD.png)
+
+
+![GPO](screenshots/gpo/DEFAULT_DOMAIN_PASSWORD_TO_DC_OU.png)
+
+
 ![GPO](screenshots/gpo/HR_DESKTOP_RESTRICTIONS.png)
 
 
