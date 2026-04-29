@@ -132,7 +132,7 @@ RODC: rodcuser1, rodcuser2
 ![RODC USERS](screenshots/users/RODC_USERS.png)
 
 
-Security Groups
+Security Groups:
 
 
 HR_Group
@@ -163,10 +163,13 @@ Forest: ravikumar.online
 Integrated with AD
 
 
+DNS Server: 10.0.0.1
+
+
 ✅**DHCP**
 
 
-Scope: 10.0.0.150 – 10.0.0.165
+Scope: 10.0.0.150 – 10.0.0.165 (10.0.0.160 - Reserved for PC1)
 
 
 Gateway: 10.0.0.1
@@ -198,15 +201,6 @@ repadmin /replsummary
 
 
 RODC (Read-Only Domain Controller)
-
-
-Configured with selective password caching:
-
-
-❌ **HR & Finance → Denied**
-
-
-✅ **IT → Allowed**
 
 
 🔐**Group Policy (GPO)**
