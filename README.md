@@ -19,9 +19,6 @@ Configure DNS and DHCP services
 Create and manage Organizational Units (OUs), Users, and Groups
 
 
-Automate user creation using PowerShell
-
-
 Apply Group Policies (GPOs)
 
 
@@ -37,18 +34,21 @@ Virtual Machines
 Machine	Role	IP Address
 
 
-DC1	Primary Domain Controller	10.0.0.10
+ROOTDC - Primary Domain Controller	10.0.0.1/8
 
 
-DC2	Additional Domain Controller	10.0.0.11
+ADC - Additional Domain Controller	10.0.0.100/8
 
 
-RODC	Read-Only Domain Controller	10.0.0.12
+RODC - Read-Only Domain Controller	10.0.0.101/8
+
+
+Client PC - PC1  10.0.0.160/8
 
 ![PING RODC](screenshots/basic/PING_RODC.png)
 
 
-Client	Windows 10/11	DHCP
+PC1	Windows 10/11	DHCP(Reserved IP)
 
 
 Network Configuration
@@ -57,19 +57,19 @@ Network Configuration
 Internal Network / Host-Only Adapter
 
 
-DNS handled by DC1
+DNS handled by ROOTDC
 
 
-DHCP configured on DC1
+DHCP configured on ROOTDC
 
 
 🏗️ **Architecture**
 
 
-DC1 → AD DS, DNS, DHCP
+ROOTDC → AD DS, DNS, DHCP
 
 
-DC2 → Additional Domain Controller (Replication)
+ADC → Additional Domain Controller (Replication)
 
 
 RODC → Read-Only Domain Controller
@@ -98,13 +98,12 @@ Detailed step-by-step instructions are available in:
 🧑‍💼 **Active Directory Structure**
 
 
-Enterprise.local
+ravikumar.online
 
 HR
 
 
 IT
-
 
 
 Finance
@@ -119,17 +118,17 @@ Groups
 Sample Users
 
 
-HR: hr.user1, hr.user2
+HR: hruser1, hruser2
 
 ![PING RODC](screenshots/users/HR_USERS.png)
 
 
-IT: it.user1, it.admin
+IT: ituser1, ituser2
 
 ![PING RODC](screenshots/users/IT_USERS.png)
 
 
-Finance: finance.user1
+Finance: financeuser1, financeuser2
 
 
 ![PING RODC](screenshots/users/FINANCE_USERS.png)
@@ -148,25 +147,6 @@ Finance_Group
 
 ![PING RODC](screenshots/groups/GROUPS.png)
 
-⚡**PowerShell Automation**
-
-User creation automated using:
-
-📄**scripts/create-users.ps1**
-
-Features:
-
-
-Bulk user creation
-
-
-OU-based organization
-
-
-Secure password setup
-
-
-Enabled accounts by default
 
 
 🌐**Services Configured**
@@ -175,7 +155,7 @@ Enabled accounts by default
 ✅ **Active Directory Domain Services**
 
 
-New forest: enterprise.local
+New forest: ravikumar.online
 
 
 ✅ **DNS**
@@ -184,25 +164,22 @@ New forest: enterprise.local
 Integrated with AD
 
 
-Optional forwarder: 8.8.8.8
-
-
 ✅**DHCP**
 
 
-Scope: 10.0.0.100 – 10.0.0.200
+Scope: 10.0.0.150 – 10.0.0.165
 
 
 Gateway: 10.0.0.1
 
 
-DNS: 10.0.0.10
+DNS: 10.0.0.1
 
 
 🔁**Domain Controllers**
 
 
-DC2 (Additional Domain Controller)
+ADC (Additional Domain Controller)
 
 
 Joined to domain
@@ -266,6 +243,9 @@ Commands used:
 repadmin /showrepl
 
 
+gpupdate /force
+
+
 📸**Screenshots**
 
 
@@ -285,9 +265,6 @@ DHCP configuration
 
 
 GPO settings
-
-
-Replication status
 
 
 Client login
@@ -318,9 +295,6 @@ Active Directory Administration
 
 
 Windows Server Management
-
-
-PowerShell Automation
 
 
 DNS & DHCP Configuration
