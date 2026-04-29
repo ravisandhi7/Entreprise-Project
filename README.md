@@ -180,7 +180,11 @@ Gateway: 10.0.0.1
 DNS: 10.0.0.1
 
 
-![PING RODC](screenshots/basic/DHCP_ADDRESS_POOL.png)
+![DHCP](screenshots/basic/DHCP_ADDRESS_POOL.png)
+
+
+![DHCP](screenshots/basic/DHCP_ADDRESS_LEASE.png)
+
 
 
 🔁**Domain Controllers**
