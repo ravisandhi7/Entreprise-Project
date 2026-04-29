@@ -34,7 +34,7 @@ Virtual Machines
 Domain Name- ravikumar.online
 
 
-Machine	Role	                                IP Address
+Machine	Role and IP Address
 
 
 ROOTDC - Server1 - Primary Domain Controller	10.0.0.1/8
