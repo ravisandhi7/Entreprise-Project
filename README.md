@@ -31,7 +31,10 @@ Test replication and domain functionality
 Virtual Machines
 
 
-Machine	Role	IP Address
+Domain Name- ravikumar.online
+
+
+Machine	Role	                                IP Address
 
 
 ROOTDC - Server1 - Primary Domain Controller	10.0.0.1/8
