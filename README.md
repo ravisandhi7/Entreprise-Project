@@ -43,7 +43,7 @@ ADC - Server100 - Additional Domain Controller	10.0.0.100/8
 RODC - Server101 - Read-Only Domain Controller	10.0.0.101/8
 
 
-Client PC - PC1  10.0.0.160/8
+Client PC - PC1 - 10.0.0.160/8
 
 
 
