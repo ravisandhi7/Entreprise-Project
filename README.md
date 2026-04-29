@@ -46,10 +46,10 @@ RODC - Read-Only Domain Controller	10.0.0.101/8
 Client PC - PC1  10.0.0.160/8
 
 
-![PING RODC](screenshots/basic/IPCONFIG_ALL_DHCP_DNS.png)
+![IPCONFIG](screenshots/basic/IPCONFIG_ALL_DHCP_DNS)
 
 
-![PING RODC](screenshots/basic/PING_RODC.png)
+![PING](screenshots/basic/PING_RODC.png)
 
 
 PC1	Windows 10/11	DHCP(Reserved IP)
@@ -300,25 +300,6 @@ GPO settings
 
 
 Client login
-
-
-📂 **Repository Structure**
-
-
-Enterprise-Active-Directory-Lab/
-│
-├── README.md
-├── architecture-diagram.png
-├── setup-guide.md
-├── scripts/
-│   └── create-users.ps1
-├── screenshots/
-│   ├── ad-structure.png
-│   ├── dhcp-scope.png
-│   ├── gpo.png
-│   └── replication.png
-└── notes/
-    └── troubleshooting.md
 
     
 🚀 **Key Skills Demonstrated**
