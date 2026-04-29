@@ -233,7 +233,7 @@ Managed via:
 Group Policy Management Console (GPMC)
 
 
-![GPO](screenshots/gpo/GROUPS_POLICY_OBJECTS.png)
+![GPO](screenshots/gpo/GP_HR_USB_DESKTOP_RESTRICTION.png)
 
 
 ![GPO](screenshots/gpo/HR_USB_BLOCK.png)
