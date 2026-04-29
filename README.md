@@ -110,9 +110,6 @@ Groups: HR_GROUP, FINANCE_GROUP, IT_GROUP
 👥 **Users and Groups**
 
 
-Sample Users
-
-
 HR: hruser1, hruser2
 
 ![PING RODC](screenshots/users/HR_USERS.png)
