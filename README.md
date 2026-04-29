@@ -1,6 +1,6 @@
 📌 **Overview**
 
-This project demonstrates a complete Enterprise Active Directory environment built using virtual machines. It simulates a real-world corporate network with multiple domain controllers, organizational units, group policies, and automation using PowerShell.
+This project demonstrates a complete Enterprise Active Directory environment built using virtual machines. It simulates a real-world corporate network with multiple domain controllers, organizational units, and group policies.
 
 The lab is designed to showcase system administration, identity management, and enterprise network configuration skills.
 
@@ -65,7 +65,7 @@ PC1	Windows 10/11	DHCP(Reserved IP)
 Network Configuration
 
 
-Internal Network / Host-Only Adapter
+NAT Network
 
 
 DNS handled by ROOTDC
@@ -143,6 +143,13 @@ Finance: financeuser1, financeuser2
 
 
 ![PING RODC](screenshots/users/FINANCE_USERS.png)
+
+
+RODC: rodcuser1, rodcuser2
+
+
+![RODC USERS](screenshots/users/RODC_USERS.png)
+
 
 Security Groups
 
